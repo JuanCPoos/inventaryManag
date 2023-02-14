@@ -1,2 +1,0 @@
-# inventaryManag
-Inventary Managment System
