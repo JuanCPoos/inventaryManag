@@ -6,6 +6,11 @@
 
 body {
   background-color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(30deg, #b5cde4 50%, #b7d4f0 50%);
+  height: 100vh;
 }
 
 .App {
@@ -52,10 +57,74 @@ body {
   }
 }
 
-.button {}
 
-.button__login {
-  margin: 3em 0;
+.box__login {
+  margin: auto !important;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.box__login .box {
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  background: white;
+  min-width: 320px;
+  /* border: 1px solid rgba(114, 110, 110, 1) !important; */
+  border-radius: 7px;
+  padding: 40px;
+  margin: 30vh;
+  height: 50 vh;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.form__body {
+  width: 400px;
+  min-width: 300px;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.form__body img {
+  width: 90px;
+  display: block;
+  margin: 20px 0;
+}
+
+.text {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.form__body input {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 75%;
+  padding-left: 10px;
+  color: #fff;
+  border: 1px solid #9B4DCA;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.form__body input[type="password"] {
+  margin-top: 20px;
+}
+
+::placeholder {
+  font-size: 1.3rem;
+}
+
+.form__body button {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 75%;
 }
