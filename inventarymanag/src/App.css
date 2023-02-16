@@ -24,14 +24,18 @@ body {
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  box-shadow: 0 0 9px 1px #282c34;
+  height: max-content;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c34;
+  margin-top: 5px;
+  padding: 0.7em 0.7em 0.7em;
 }
 
 .App-link {
