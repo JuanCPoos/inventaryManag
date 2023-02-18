@@ -1,3 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(30deg, #b5cde4 50%, #b7d4f0 50%);
+  height: 100vh;
+}
+
 .App {
   text-align: center;
 }
@@ -14,14 +29,18 @@
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  box-shadow: 0 0 9px 1px #282c34;
+  height: max-content;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #282c34;
+  margin-top: 5px;
+  padding: 0.7em 0.7em 0.7em;
 }
 
 .App-link {
@@ -32,7 +51,80 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.box__login {
+  margin: auto !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.box__login .box {
+  /* background-color: rgba(255, 255, 255, 0.7); */
+  background: white;
+  min-width: 320px;
+  /* border: 1px solid rgba(114, 110, 110, 1) !important; */
+  border-radius: 7px;
+  padding: 40px;
+  margin: 30vh;
+  height: 50 vh;
+  box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.6);
+}
+
+.form__body {
+  width: 400px;
+  min-width: 300px;
+  border-radius: 10px;
+  border-top-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+
+.form__body img {
+  width: 90px;
+  display: block;
+  margin: 20px 0;
+}
+
+.text {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.form__body input {
+  display: block;
+  margin: auto;
+  height: 40px;
+  width: 75%;
+  padding-left: 10px;
+  color: #fff;
+  border: 1px solid #9B4DCA;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.form__body input[type="password"] {
+  margin-top: 20px;
+}
+
+::placeholder {
+  font-size: 1.3rem;
+}
+
+.form__body button {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  height: 40px;
+  width: 75%;
 }

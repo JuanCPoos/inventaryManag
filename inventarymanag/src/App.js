@@ -1,14 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/Header';
+import BotonLogin from './components/BotonLogin';
+import Input from './components/login/Input';
 
-function App() {
-  
+function App() {  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        
-      </header>
+    <div className="">      
+      {/* <BotonLogin /> */}
+      <Input />
     </div>
   );
 }
