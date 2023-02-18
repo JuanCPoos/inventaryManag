@@ -1,4 +1,5 @@
 import React, { Componenet } from 'react';
+import avatar from '../../assets/img/avatar.png';
 
 
 export default function Input (){
@@ -6,8 +7,8 @@ export default function Input (){
         <div className='container box__login'>
             <div className='box'>
                 <div className='form__body'>
-                    <img src="" alt="user_login"/>
-                    <p className="text">Bienvenido</p>
+                    <img src={avatar} alt="user_login" />
+                    <p className="text">Bienvenido</p>                    
                     <form className='login__form'>
                         <input type="text" placeholder="email o nombre de usuario"></input>
                         <input type="password" placeholder='Constraseña'></input>
